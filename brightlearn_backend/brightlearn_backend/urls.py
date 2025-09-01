@@ -8,6 +8,14 @@ def home(request):
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/auth/', include('accounts.urls')),
+    path('api/auth/', include('https://ayushbire.pythonanywhare.com/')),
     path('', home),  # Add this for root path
+]
+from django.http import HttpResponse
+
+def test_view(request):
+    return HttpResponse("✅ BrightLearn backend is live on PythonAnywhere!")
+
+urlpatterns += [
+    path('test/', test_view),   # 👈 temporary test route
 ]
