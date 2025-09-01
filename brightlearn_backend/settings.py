@@ -42,8 +42,8 @@ INSTALLED_APPS = [
     'corsheaders',
 
     # Your apps
-    'courses',
-    'accounts',
+    'brightlearn_backend.courses',
+    'brightlearn_backend.accounts',
 ]
 
 MIDDLEWARE = [
