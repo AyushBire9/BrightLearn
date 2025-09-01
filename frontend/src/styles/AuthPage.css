@@ -1,0 +1,90 @@
+/* Full page background */
+
+
+/* Centered form container */
+.auth-form {
+  width: 100%;
+  max-width: 400px;
+  padding: 30px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1); /* frosted glass effect */
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  color: #fff;
+}
+
+/* Title */
+.auth-form h2 {
+  margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+/* Form layout */
+.auth-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Input fields */
+.auth-form input {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+.auth-form input::placeholder {
+  color: #e0e0e0;
+}
+
+/* Buttons */
+.auth-form button[type="submit"] {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.auth-form button[type="submit"]:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #0072ff, #00c6ff);
+}
+
+/* Toggle button inside text */
+.auth-form p {
+  margin-top: 12px;
+  font-size: 14px;
+  color: #ddd;
+}
+
+.auth-form p button {
+  background: none;
+  border: none;
+  color: #00e6ff;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 0;
+}
+
+.auth-form p button:hover {
+  color: #ffcc70;
+}
+
+/* Message styling */
+.auth-form p:last-child {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #ffdfdf;
+}

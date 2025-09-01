@@ -1,0 +1,40 @@
+.home-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #2d1f3b, #1a212e);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.home-banner {
+  text-align: center;
+  color: white;
+}
+
+.home-banner h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.home-banner p {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.home-btn {
+  background: white;
+  color: #2575fc;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.home-btn:hover {
+  background: #f1f1f1;
+  transform: scale(1.05);
+}

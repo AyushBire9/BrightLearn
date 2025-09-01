@@ -1,0 +1,36 @@
+.contact-container {
+  padding: 50px;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  background: #eef2f7;
+  text-align: center;
+}
+
+.contact-form {
+  margin: auto;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.contact-form button {
+  padding: 12px;
+  background: #2575fc;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background: #1b5fd1;
+}
