@@ -7,8 +7,8 @@ def home(request):
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/auth/', include('brightlearn_backend.accounts.urls')),  # full path
+    path('api/auth/', include('accounts.urls')),  # full path
     path('', home),
-    path('api/courses/', include('brightlearn_backend.courses.urls')),  # full path
-    
+      # full path
+
 ]

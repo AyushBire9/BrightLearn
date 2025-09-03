@@ -11,7 +11,10 @@ DEBUG = True
 
 # ✅ Allow both local & live server
 ALLOWED_HOSTS = ["*", "127.0.0.1", "localhost", "yourdomain.com"]
-
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:4327",  # your React frontend
+    "http://127.0.0.1:4327",
+]
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -43,12 +46,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-# ✅ CORS allowed origins (local + live frontend)
-CORS_ALLOWED_ORIGINS = [
-    "http://localhost:4327",
-    "http://127.0.0.1:4327",
-    "https://brightlearn-1.onrender.com",   # replace with your frontend domain
-]
+
 
 # Optional: allow all origins (useful for testing on live server)
 # CORS_ALLOW_ALL_ORIGINS = True  
